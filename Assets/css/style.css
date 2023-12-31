@@ -6,7 +6,7 @@
     --color-base: #033f47;
     --color-base2: #022a30;
     --color-brand: #e0f780;
-    --color-brand2: #deff58;
+    --color-brand2: #deff00;
     --sidbar-width: 300px;
     --font-base: "Bai Jamjuree";
 }
@@ -73,6 +73,19 @@ img {
     color: black;
 }
 
+@media (max-width: 767px) {
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Adjust the spacing as needed */
+        align-items: center;
+    }
+
+    .btn {
+        border-radius: 0;
+    }
+}
+
 /* NAVBAR */
 .navbar {
     background-color: var(--color-base);
@@ -92,6 +105,8 @@ img {
 .navbar .nav-link:active{
     color: var(--color-brand);
 }
+
+
 @media (min-width: 992px) {
     .navbar {
         min-height: 100vh;
@@ -108,8 +123,9 @@ img {
     /* Content Wrapper */
     #content-wrapper {
         padding-left: var(--sidbar-width);
-
     }
+    
+    
 }
 
 /* BTN */
@@ -125,7 +141,11 @@ img {
 }
 
 .btn-brand:hover,
-.btn-brand:focus {
+.btn-brand:focus,
+.btn-group button.active,
+.btn-group button.active:hover,
+.btn-group button.active:focus
+ {
     background-color: var(--color-brand2);
     color: var(--color-base);
     border-color: var(--color-brand2);

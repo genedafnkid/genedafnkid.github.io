@@ -13,5 +13,31 @@ AOS.init({
   once: false, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+});
 
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('.btn-group button');
+    const projectCards = document.querySelectorAll('.col-md-4');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.getAttribute('data-filter');
+            
+            // Toggle active class for buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            // Show/hide project cards based on the selected filter
+            projectCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                if (category === 'all' || category === cardCategory) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            AOS.refresh(); // Refresh AOS after filtering
+        });
+    });
 });
