@@ -41,3 +41,36 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+// Function to open the modal and display the enlarged photo
+function openModal(imageSrc) {
+    const modal = document.getElementById('enlarged-photo-modal');
+    const enlargedPhoto = document.getElementById('enlarged-photo');
+
+    // Set the source of the enlarged photo
+    enlargedPhoto.src = imageSrc;
+
+    // Show the modal
+    modal.style.display = 'block';
+
+    // Close modal when clicking outside the photo
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            closeModal();
+        }
+    };
+
+    // Close modal when pressing "esc"
+    window.onkeydown = function (event) {
+        if (event.key === 'Escape') {
+            closeModal();
+        }
+    };
+}
+
+function closeModal() {
+    const modal = document.getElementById('enlarged-photo-modal');
+    modal.style.display = 'none';
+}
+
