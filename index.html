@@ -1,387 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gene's Portfolio</title>
-    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Assets/css/aos.css">
-    <link rel="stylesheet" href="Assets/css/line-awesome.min.css">
-    <link rel="stylesheet" href="Assets/css/style.css">
-
-
-
-</head>
-
-<body data-bs-spy="scroll" data-bs-target="#navbar">
-
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container flex-lg-column">
-            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
-                <span class="h3 fw-bold d-block d-lg-none">Gene Sepe</span>
-                <img src="./Assets/images/person.jpg" class="d-none d-lg-block rounded-circle">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certifications">Certifications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Gene Sepe</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Technical Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <!-- //NAVBAR-->
-    <!-- CONTENT WRAPPER -->
-    <div id="content-wrapper">
-
-        <!-- HOME PAGE -->
-        <section id="home" class="full-height px-lg-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <h1 class="display-4 fw-bold" data-aos="fade-up">A <span class="text-brand">DATA ANALYST</span>
-                            ASPIRANT FROM THE PHILIPPINES</h1>
-                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am a dedicated Data
-                            Analyst with a profound affinity for extracting insights from data through the power of
-                            programming. My analytical mindset and love for problem-solving drive my commitment to
-                            delivering
-                            meaningful and actionable results.</p>
-                        <div data-aos="fade-up" data-aos-delay="600">
-                            <a href="#projects" target="_self" class="btn btn-brand me-3">Explore my Projects</a>
-                            <a href="#" class="link-custom">Call: (639)66-982-4642</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- //HOME PAGE -->
-
-        <!-- PROJECTS -->
-        <section id="projects" class="full-height px-lg-5">
-            <div class="container">
-                <div class="row pb-4 " data-aos="fade-up">
-                    <div class="col-lg-8">
-                        <h6 class="text-brand">
-                            PROJECTS
-                            <h1>Unleashing Insights Through<span class="text-brand"> Innovative Projects</span></h1>
-                        </h6>
-                    </div>
-                </div>
-                <div class="btn-group mb-3" role="group" aria-label="Project Filters">
-                    <button type="button" class="btn btn-brand active" data-filter="all">All</button>
-                    <button type="button" class="btn btn-brand" data-filter="machine-learning">Machine
-                        Learning</button>
-                    <button type="button" class="btn btn-brand" data-filter="data-visualization">Data
-                        Visualization</button>
-                    <button type="button" class="btn btn-brand" data-filter="sql">SQL</button>
-                </div>
-                <div class="row">
-                    <!--PROJECT 1-->
-                    <div class="col-md-4 mb-3" data-aos="fade-up" data-category="machine-learning">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom image">
-                                <img src="./Assets/images/Screenshot 2023-12-31 040326.png" id="project" alt=""
-                                    class="rounded-4">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4 class="mt-4">Breast Cancer Diagnosis Predictor</h4>
-                                <p>Implemented
-                                    machine learning algorithms using scikit-learn for accurate breast cancer diagnosis
-                                    prediction.</p> <!--PROJECT 1-->
-                                <a target="_blank"
-                                    href="https://github.com/genedafnkid/BreastCancerDiagnosisPredictor/blob/main/Sepe_FinalProject%20(1).ipynb"
-                                    class="link-custom">SOURCE CODE</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--PROJECT 2-->
-                    <div class="col-md-4 mb-3" data-aos="fade-up" data-category="sql">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom image">
-                                <img src="./Assets/images/sql-1.png" alt="" id="project" class="rounded-4">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4 class="mt-4">GCS Database Design and Implementation
-                                </h4>
-                                <p>Utilized database solution for Global Computer Solutions (GCS) using Oracle
-                                    SQL, encompassing tables, views, stored procedures, and triggers.</p>
-                                <a target="_blank"
-                                    href="https://github.com/genedafnkid/GCS-Database-Design-and-Implementation"
-                                    class="link-custom">SOURCE CODE</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--PROJECT 3-->
-                    <div class="col-md-4 mb-3" data-aos="fade-up" data-category="data-visualization">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom image">
-                                <img src="./Assets/images/dashboard-1.png" alt=""
-                                    onclick="openModal('./Assets/images/dashboard-1.png')" class="rounded-4">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4 class="mt-4">Washington House Sales Dashboard</h4>
-                                <a target="_blank"
-                                    href="https://public.tableau.com/app/profile/gene.merc.sepe/viz/KingCountyHouseSales_17042206872900/KingCountyHouseSales?publish=yes"
-                                    class="link-custom">DEMO</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-                </div>
-            </div>
-
-        </section>
-        <!-- //PROJECTS -->
-        <div id="enlarged-photo-modal" class="modal">
-            <span class="close-modal" onclick="closeModal()">&times;</span>
-            <img id="enlarged-photo" class="enlarged-photo-content" src="" alt="Enlarged Photo">
+    <nav id="hamburger-nav">
+      <div class="logo">Gene Sepe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <!-- ABOUT -->
-        <section id="experience" class="full-height px-lg-5">
-            <div class="container">
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
 
-                <div class="row pb-4" data-aos="fade-up">
-                    <div class="col-lg-8">
-                        <h6 class="text-brand">ABOUT</h6>
-                        <h1>My Education & Experience</h1>
-                    </div>
-                </div>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="Gene Sepe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Gene Sepe</h1>
+        <p class="section__text__p2">Business Intelligence Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Sepe_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/gene-sepe/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/genedafnkid'"
+          />
+        </div>
+      </div>
+    </section>
 
-                <div class="row gy-5">
-                    <div class="col-lg-6">
-                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
-                        <div class="row gy-4">
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="300">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h5>B.S Infomation Technology</h5>
-                                    <p>Specialization in Enterprise Data Management</p>
-                                    <p>GWA: 1.54</p>
-                                    <p class="text-brand mb-2">Mapua University (October 2024)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experience</h3>
-                        <div class="row gy-4">
-
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="300">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h5>Corporate IT Intern</h5>
-                                    <p class="text-brand mb-0">Shopee Philippines</p>
-                                    <p>Provided IT support by managing Active Directory (AD) user accounts, automating routine tasks with PowerShell scripts, configuring VPN access, and resolving daily hardware and software issues reported by users.</p>
-                                    <p class="text-brand mb-2">August 2024 - December 2024</p>
-                                </div>
-                            </div>
-
-
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="300">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h5>Software QA Intern</h5>
-                                    <p class="text-brand mb-0">LoPhils</p>
-                                    <p>Spearheaded the creation and optimization of Cypress test cases, improving automation efficiency by reducing test runtime from 30 to 15 minutes, resulting in faster release cycles and enhanced product quality.</p>
-                                    <p class="text-brand mb-2">February 2023 - November 2023</p>
-                                </div>
-                            </div>
-
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="300">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h5>Quality Assurance Intern</h5>
-                                    <p class="text-brand mb-0">PearlPay</p>
-                                    <p>Led comprehensive Regression Testing initiatives, guaranteeing the software's
-                                        stability and reliability under diverse conditions.</p>
-                                    <p class="text-brand mb-2">October 2022 - December 2022</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4 Undergraduate Internships <br />Analytics Focused</p>
             </div>
-        </section>
-        <!-- //ABOUT -->
-
-        <!-- CERTIFICATIONS -->
-        <section id="certifications" class="full-height px-lg-5">
-            <div class="container">
-                <div class="row pb-4 " data-aos="fade-up">
-                    <div class="col-lg-8">
-                        <h6 class="text-brand">
-                            CERTIFICATIONS
-                            <h1>CERTIFICATION HIGHLIGHTS</h1>
-                        </h6>
-                    </div>
-                </div>
-
-                <!-- Add certification cards here -->
-                <div class="row">
-                    <!-- CERTIFICATION 1 -->
-                    <div class="col-md-4 mb-3" data-aos="fade-up" id="row">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom image">
-                                <img src="./Assets/images/certification-1.png" alt="" class="rounded-4">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4 class="mt-4">Google Advanced Data Analytics</h4>
-                                <p>Coursera</p>
-                                <a target="_blank"
-                                    href="https://www.coursera.org/account/accomplishments/specialization/C8WK62BNPH47"
-                                    class="link-custom">MORE</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CERTIFICATION 2 -->
-                    <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom image">
-                                <img src="./Assets/images/certification-2.png" alt="" class="rounded-4">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4 class="mt-4">Database Management Essentials</h4>
-                                <p>Coursera</p>
-                                <a target="_blank"
-                                    href="https://www.coursera.org/account/accomplishments/verify/SABV5RATZGNJ"
-                                    class="link-custom">MORE</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- CERTIFICATION 3 -->
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom image">
-                                <img src="./Assets/images/certification-3.png" alt="" class="rounded-4">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4 class="mt-4">Introduction to Data Science in Python</h4>
-                                <p>Coursera</p>
-                                <a target="_blank"
-                                    href="https://www.coursera.org/account/accomplishments/verify/JVDD9EDSRKBQ"
-                                    class="link-custom">MORE</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p><b>BS Information Technology</b><br/>Specialization in Cyebrsecurity</p>
             </div>
-        </section>
-        <!-- //CERTIFICATIONS -->
+          </div>
+          <div class="text-container">
+            <p>
+              I specialize in business intelligence, data analytics, and automation, transforming complex data into actionable insights. With expertise in real-time monitoring, process automation, and dashboard development, I leverage tools like ELK Stack, Looker Studio, Power BI, and Python to optimize decision-making and operational efficiency. Passionate about data-driven solutions, I continuously enhance my skills in data engineering, visualization, and automation to drive meaningful impact.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-grid">
+      
+      <!-- One "experience-card" per role/position -->
+        <div class="experience-card">
+          <!-- Header: date on left, logo on right -->
+          <div class="experience-header">
+            <span class="experience-date">January 2025 - April 2025</span>
+            <img src="./assets/logo-1.png" alt="Company Logo" class="experience-logo" />
+          </div>
+          
+          <!-- Company name & position -->
+          <h2 class="company-name">Henkel Asia Pacific Service Ctr.</h2>
+          <h3 class="position-title">Customer Master Data Intern</h3>
+      
+          <!-- Bulleted list of responsibilities/skills -->
+          <ul class="experience-bullets">
+            <li>Developed a Python-based automation project to extract data from PDFs and transfer it to Excel, improving efficiency and reducing manual data entry errors.</li>
+            <li>Developed comprehensive manuals and instructional videos for customers registered under the Customer Portal, enhancing user experience and accessibility.</li>
+          </ul>
+        </div>
 
-        <!-- RESUME -->
-        <section id="resume" class="full-height px-lg-5">
-            <div class="container">
-                <div class="row pb-4" data-aos="fade-up">
-                    <div class="col-lg-8">
-                        <h6 class="text-brand">
-                            RESUME
-                        </h6>
-                    </div>
-                </div>
+        <div class="experience-card">
+          <!-- Header: date on left, logo on right -->
+          <div class="experience-header">
+            <span class="experience-date">August 2024 - December 2024</span>
+            <img src="./assets/logo-2.png" alt="Company Logo" class="experience-logo" />
+          </div>
+          
+          <!-- Company name & position -->
+          <h2 class="company-name">Shopee Philippines</h2>
+          <h3 class="position-title">Corporate IT Intern</h3>
+      
+          <!-- Bulleted list of responsibilities/skills -->
+          <ul class="experience-bullets">
+            <li>Provided IT support by managing Active Directory (AD) user accounts, automating routine tasks with PowerShell scripts, configuring VPN access, and resolving daily hardware and software issues reported by users</li>
+            <li>Utilized ELK Stack (Elasticsearch, Logstash, Kibana) to implement real-time data monitoring and analysis solutions, optimizing IT Helpdesk operations</li>
+          </ul>
+        </div>
+        
+        <div class="experience-card">
+          <!-- Header: date on left, logo on right -->
+          <div class="experience-header">
+            <span class="experience-date">March 2023 - November 2023</span>
+            <img src="./assets/logo-3.jpg" alt="Company Logo" class="experience-logo" />
+          </div>
+          
+          <!-- Company name & position -->
+          <h2 class="company-name">LoPhils</h2>
+          <h3 class="position-title">Software QA Automation Intern</h3>
+      
+          <!-- Bulleted list of responsibilities/skills -->
+          <ul class="experience-bullets">
+            <li>Spearheaded the creation and optimization of Cypress test cases, improving automation efficiency by reducing test runtime from 30 to 15 minutes, resulting in faster release cycles and enhanced product quality</li>
+            <li>Significantly improved test case plan documentation for the application, resulting in comprehensive coverage of all possible scenarios and ensuring robust testing standards</li>
+            <li>Designed and developed a Looker Studio dashboard for IT developers' productivity analysis by integrating Jira data through Google Sheets. Enabled data-driven insights and performance tracking to optimize team efficiency</li>
+          </ul>
+        </div>
 
-                <div class="row">
-                    <div class="col-lg-6">
-                        <!-- Display Resume Photo -->
-                        <img src="./Assets/images/resume_photo.png" alt="Resume Photo" class="img-fluid lg-4"
-                            data-aos="fade-right" data-aos-delay="300">
-                    </div>
-                    <div class="col-lg-8">
-                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
-                            Download my resume in PDF format to learn more about my skills and experiences.
-                        </p>
-                        <div data-aos="fade-up" data-aos-delay="600">
-                            <a href="./Assets/images/resume.pdf" target="_blank" class="btn btn-brand me-3">Download
-                                Resume</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- //RESUME -->
-
-        <!-- CONTACT -->
-        <section id="contact" class="full-height px-lg-5">
-            <div class="container">
-                <div class="row pb-4" data-aos="fade-up">
-                    <div class="col-lg-8">
-                        <h6 class="text-brand">
-                            CONTACT
-                            <h1>GET IN TOUCH</h1>
-                        </h6>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4 mb-3" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-content p-4">
-                                <h4 class="mt-4">LinkedIn</h4>
-                                <p>Connect with me on LinkedIn to stay updated.</p>
-                                <a href="https://www.linkedin.com/in/gene-sepe" target="_blank"
-                                    class="link-custom">Visit LinkedIn</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-content p-4">
-                                <h4 class="mt-4">GitHub</h4>
-                                <p>Explore my projects on GitHub.</p>
-                                <a href="https://github.com/genedafnkid" target="_blank" class="link-custom">Visit
-                                    GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="600">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-content p-4">
-                                <h4 class="mt-4">Email</h4>
-                                <p>Send me an email!</p>
-                                <a href="mailto:your-sepe.genemerc@gmail.com" class="link-custom">Send Email</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- //CONTACT -->
-
-
-
-
+        <div class="experience-card">
+          <!-- Header: date on left, logo on right -->
+          <div class="experience-header">
+            <span class="experience-date">October 2022 - December 2022</span>
+            <img src="./assets/logo-4.jpg" alt="Company Logo" class="experience-logo" />
+          </div>
+          
+          <!-- Company name & position -->
+          <h2 class="company-name">PearlPay</h2>
+          <h3 class="position-title">Software QA Intern</h3>
+      
+          <!-- Bulleted list of responsibilities/skills -->
+          <ul class="experience-bullets">
+            <li>Led comprehensive Regression Testing initiatives, guaranteeing the software's stability and reliability under diverse conditions.</li>
+            <li>Collaborated seamlessly with the QA team, actively identifying and reporting software defects. Documented precise steps to reproduce issues, facilitating efficient debugging and resolution processes.</li>
+        </ul>
+      </div>
+        
+      
     </div>
-    <!-- //CONTENT WRAPPER -->
+    </section>
+    
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Technical Skills</h1>
+      <div class="experience-details-container">
+        <!-- Programming Languages -->
+        <div class="skills-details-container">
+          <h2 class="experience-sub-title">Programming Languages</h2>
+          <div class="skills-article-container">
+            <article>
+              <img src="./assets/icons/python.png" alt="Experience icon" class="icon" />
+              <h3>Python</h3>
+            </article>
+            <article>
+              <img src="./assets/icons/java.png" alt="Experience icon" class="icon" />
+              <h3>Java</h3>
+            </article>
+            <article>
+              <img src="./assets/icons/r.jpg" alt="Experience icon" class="icon" />
+              <h3>R</h3>
+            </article>
+          </div>
+        </div>
+    
+        <!-- Data Engineering -->
+        <div class="skills-details-container">
+          <h2 class="experience-sub-title">Data Engineering</h2>
+          <div class="skills-article-container">
+            <article>
+              <img src="./assets/icons/sql.png" alt="Experience icon" class="icon" />
+              <h3>Oracle SQL</h3>
+            </article>
+            <article>
+              <img src="./assets/icons/logstash.png" alt="Experience icon" class="icon" />
+              <h3>Logstash</h3>
+            </article>
+            <article>
+              <img src="./assets/icons/pandas.png" alt="Experience icon" class="icon" />
+              <h3>Pandas</h3>
+            </article>
+          </div>
+        </div>
+
+        <!-- Data Viz -->
+        <div class="skills-details-container">
+          <h2 class="experience-sub-title">Data Visualization</h2>
+          <div class="skills-article-container">
+            <article>
+              <img src="./assets/icons/looker.svg" alt="Experience icon" class="icon" />
+              <h3>LookerStudio</h3>
+            </article>
+          </article>
+          <article>
+            <img src="./assets/icons/powerbi.png" alt="Experience icon" class="icon" />
+            <h3>PowerBI</h3>
+          </article>
+          <article>
+            <img src="./assets/icons/python.png" alt="Experience icon" class="icon" />
+            <h3>Python</h3>
+          </article>
+          <article>
+            <img src="./assets/icons/kibana.png" alt="Experience icon" class="icon" />
+            <h3>Kibana</h3>
+          </article>
+          <article>
+            <img src="./assets/icons/tableau.png" alt="Experience icon" class="icon" />
+            <h3>Tableau</h3>
+          </article>
+          </div>
+        </div>
+
+        <div class="skills-details-container">
+          <h2 class="experience-sub-title">ERP & Data Management</h2>
+          <div class="skills-article-container">
+            <article>
+              <img src="./assets/icons/sap.jpg" alt="Experience icon" class="icon" />
+              <h3>SAP</h3>
+            </article>
+            <article>
+              <img src="./assets/icons/ms365.png" alt="Experience icon" class="icon" />
+              <h3>Microsoft Dynamics 365</h3>
+            </article>
+            <article>
+              <img src="./assets/icons/excel.png" alt="Experience icon" class="icon" />
+              <h3>Microsoft Excel</h3>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Breast Cancer Diagnosis Predictor</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/genedafnkid/BreastCancerDiagnosisPredictor'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">GCS Database Design and Implementation</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/genedafnkid/GCS-Database-Design-and-Implementation'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Washington House Sales Dashboard</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://public.tableau.com/app/profile/gene.merc.sepe/viz/KingCountyHouseSales_17042206872900/KingCountyHouseSales?publish=yes/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
 
 
-    <script src="Assets/js/bootstrap.bundle.min.js"></script>
-    <script src="Assets/js/aos.js"></script>
-    <script src="Assets/js/main.js"></script>
-</body>
+    <section id="certifications">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Certifications</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/certification-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Google Advanced Data Analytics</h2>
+            <p>Coursera</p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/certification-2.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Database Management Essentials</h2>
+            <p>Coursera</p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/certification-3.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Introduction to Data Science in Python</h2>
+            <p>Coursera</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
 
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:sepe.genemerc@gmail.com">sepe.genemerc@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/gene-sepe" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
